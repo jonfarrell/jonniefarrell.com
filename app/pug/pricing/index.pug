@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='../stylesheets/styles.css', type='text/css')
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  body
+    .desktop-nav
+      .nav-wrapper
+        a.nav-logo(href="../")
+        ul
+          li
+            a(href="../") Home
+          li
+            a(href="../blog") Blog
+          li
+            a(href="../about") About Us
+          li
+            a(href="../pricing") Pricing
+
+    .mobile-nav
+      .nav-logo
+      #menu-btn.menu-btn
+        div
+        span
+        span
+        span
+      .responsive-menu
+        ul.animated-fast.fadeIn
+          li
+            a(href="../index.html") Home
+          li
+            a(href="../blog") Blog
+          li
+            a(href="../about") About Us
+          li
+            a(href="../pricing") Pricing
+
+    .pricing
+      .container
+        .pricing-wrapper
+          h4.animated.fadeIn Pricing
+          .price-box-lrg.one.animated.fadeIn
+            .male-img
+            h5 28 Day Transformation Challenge - Male
+            ul
+              li 7 Strength & Conditioning Classes Per Week
+              li Customised Nutrition Plan
+              li Monthly Mind/Goal Setting Seminar
+              li Access To A Private 24/7 Members Support Group
+              li $250 Cash Prize for 'Best Transformation'
+            h1 $97
+            .btn-wrap
+              a(class="btn-reg" href="https://activehabits.clickfunnels.com/optink3hdregz") Get Started
+          .price-box-lrg.two.animated.fadeIn
+            .female-img
+            h5 28 Day Transformation Challenge - Female
+            ul
+              li 7 Strength & Conditioning Classes Per Week
+              li Customised Nutrition Plan
+              li Monthly Mind/Goal Setting Seminar
+              li Access To A Private 24/7 Members Support Group
+              li $250 Cash Prize for 'Best Transformation'
+            h1 $97
+            .btn-wrap
+              a(class="btn-reg" href="https://activehabits.clickfunnels.com/optin?preview=true") Get Started
+
+  .footer
+    .footer-wrapper
+      .copyright
+        p &#169; Active Habits 2017
+      ul.social-links
+       li <a href="https://www.facebook.com/activehabits/" class="facebook"></a>
+       li <a href="https://www.instagram.com/activehabits_" class="instagram"></a>
+       li <a href="tel:0411538188" class="contact-no">0411 538 188</a>
+       li <a href="tel:0400668622" class="contact-no">0400 668 622</a>
+
+    script(type='text/javascript').
+      jQuery(function($){
+      $( '.menu-btn' ).click(function(){
+      $('.responsive-menu').toggleClass('expand')
+      })
+      })

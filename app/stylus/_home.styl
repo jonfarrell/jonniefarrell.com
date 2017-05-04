@@ -1,0 +1,138 @@
+.hero
+  width 100%
+  height 550px
+  background-image url('../images/hero.jpg')
+  overflow hidden
+  background-size cover
+
+.about-us
+  margin-top 150px
+  margin-bottom 150px
+  display block
+  height 400px
+  .container
+    h4
+      text-align center
+    .grid-4
+      width 33%
+      height 300px
+      float left
+      display inline
+      .icon
+        width 42px
+        height 42px
+        margin 0 auto
+        margin-top 50px
+        border-radius 4px
+      .icon-one
+        background-image url('../images/icon-1.svg')
+      .icon-two
+        background-image url('../images/icon-2.svg')
+      .icon-three
+        background-image url('../images/icon-3.svg')
+      .text
+        width 80%
+        margin 0 auto
+        margin-top 20px
+        h5
+          text-align left
+          margin-bottom 10px
+        p
+          color #839095
+    .btn-wrap
+      width 178px
+      margin 0 auto
+      margin-top 400px
+
+.testimonials
+  margin-top 150px
+  display block
+  background-color #F5F9FB
+  .container
+    padding-bottom 100px
+    h4
+      margin-top 150px
+      text-align center
+    .grid-6
+      .icon
+        width 48px
+        height 48px
+        background-color placeholderGrey
+        margin 0 auto
+        margin-top 50px
+        border-radius 4px
+      .text
+        width 80%
+        margin 0 auto
+        margin-top 20px
+        p
+          color #839095
+
+.location
+  display block
+  .container
+    padding-bottom 100px
+    h4
+      margin-top 150px
+      text-align center
+    .map
+      width 499px
+      margin 0 auto
+      border-radis 4px
+      margin-top 40px
+
+.steve-f
+  background-image url('../images/steve-f.jpg')
+  background-size cover
+.patricia-c
+  background-image url('../images/patricia-c.jpg')
+  background-size cover
+.godfrey-q
+  background-image url('../images/godfrey.jpg')
+  background-size cover
+.pratik-v
+  background-image url('../images/pratik.jpg')
+  background-size cover
+.deb-p
+  background-image url('../images/deb-p.jpg')
+  background-size cover
+
+
+@media only screen and (max-width: 1023px)
+  .about-us
+    .container
+      width 100%
+      .grid-4
+        display block
+        width 100%;
+  .testimonials
+    margin-top 700px
+    .container
+      width 100%
+      .grid-6
+        width 80%
+
+@media only screen and (max-width: 767px)
+  .hero
+    background-position-x: -420px;
+    height 440px
+  .about-us
+    .container
+      .grid-4
+        padding-bottom 70px
+      .grid-4:nth-child(4)
+        padding-bottom 100px
+  .testimonials
+    margin-top 850px
+    .container
+      h4
+        padding-bottom 40px
+      .grid-6
+        .avatar
+          display block
+          float: initial;
+          margin: 0 auto;
+        .text
+          width 100%
+          h5
+            text-align center

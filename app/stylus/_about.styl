@@ -1,0 +1,91 @@
+.about-us-page
+  display block
+  width 100%;
+  background-color #f5f9fb
+  .container
+    h4
+      margin-bottom 20px
+      text-align center
+      color #3A3D3E
+      font-weight: 100
+      margin-top 100px
+    p
+      font-size: 16px;
+      color: #839094;
+      letter-spacing: 0;
+      line-height: 19.6px;
+      width 625px
+      margin 0 auto
+      margin-bottom 40px
+      font-weight 100
+      &:last-child
+        padding-bottom: 100px;
+
+
+.about-profile
+  background-color #fff
+  width 100%
+  .container
+    h4
+      margin-top 150px
+      margin-bottom 20px
+      text-align center
+      font-weight 100
+    .trainer
+      width: 40%;
+      float left
+      margin-left 5%
+      margin-top 65px
+      padding-bottom 100px
+      .profile-img
+        width 60px
+        height 60px
+        border-radius 100px
+        float left
+      .profile-text
+        width 75%;
+        float left
+        margin-left 20px
+      .rance
+        background-image url('../images/rance.jpg')
+        background-size cover
+      .mitch
+        background-image url('../images/mitch.jpg')
+        background-size cover
+
+@media only screen and (max-width: 1023px)
+  .about-profile
+    .container
+      width 100%
+      .trainer
+        width 70%;
+        margin 0 auto
+        display block
+        float initial
+        padding-bottom 220px
+        padding-top 40px
+  .about-us-page
+    .container
+      width 100%
+      p
+        width 90%
+
+@media only screen and (max-width: 767px)
+  .about-profile
+    .container
+      width 100%
+      .trainer
+        width 90%
+        padding-bottom 300px
+        .profile-img
+          display: block;
+          float: initial;
+          margin: 0 auto;
+        .profile-text
+          width 100%
+          display block
+          margin 0 auto
+          h3
+            text-align center
+            margin-top 14px
+            margin-bottom 14px

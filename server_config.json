@@ -1,0 +1,97 @@
+{
+  "port":"3006",
+  "base":"public",
+  "indexFile":"index.html",
+  "404":"/404.html",
+  "routes":{
+
+    "/":                                        "/index.html",
+    "/app/*":                                   "/app/index.html",
+
+    "/careerone/*":                             "/careerone/index.html",
+
+    "/tasks":                                   "/app/index.html",
+    "/tasks/*":                                 "/app/index.html",
+
+    "/users":                                   "/app/index.html",
+    "/users/*":                                 "/app/index.html",
+
+    "/leaderboards":                            "/app/index.html",
+    "/leaderboards/*":                          "/app/index.html",
+
+    "/messages":                                "/app/index.html",
+    "/messages/*":                              "/app/index.html",
+
+    "/reviews":                                 "/app/index.html",
+    "/reviews/*":                               "/app/index.html",
+
+    "/my-tasks":                                "/app/index.html",
+    "/my-tasks/*":                              "/app/index.html",
+
+    "/account":                                 "/app/index.html",
+    "/account/*":                               "/app/index.html",
+
+    "/refer-a-friend":                          "/app/index.html",
+
+    "/oauth":                                   "/app/index.html",
+    "/oauth/*":                                 "/app/index.html",
+
+    "/landing/*":                                "/landing/post-task-landing/index.html",
+    "/landing-preview/*":                        "/landing/post-task-landing/index.html",
+    
+    "/categories/*":                             "/categories/other/index.html",
+
+    "/categories-preview/*":                    "/categories/other/index.html",
+
+    "/about/*":                                 "/about/index.html",
+    "/careers/*":                               "/careers/index.html",
+    "/faq/*":                                   "/faq/index.html",
+    "/how-it-works/*":                          "/how-it-works/index.html",
+    "/press/*":                                 "/press/index.html",
+    "/privacy/*":                               "/privacy/index.html",
+    "/reset-password/*":                        "/reset-password/index.html",
+    "/rules/*":                                 "/rules/index.html",
+    "/sign-up/*":                               "/sign-up/index.html",
+    "/style-guide/*":                           "/style-guide/index.html",
+    "/terms/*":                                 "/terms/index.html",
+    "/trust/*":                                 "/trust/index.html",
+
+    "/login":                                   "/index.html",
+    "/sign-up":                                 "/index.html",
+    "/login-or-signup":                         "/index.html",
+    "/old-browser":                             "/index.html",
+    "/post-task":                               "/index.html",
+    "/edit-task/*":                             "/app/index.html",
+    "/copy-task/*":                             "/app/index.html",
+    "/user-registration":                       "/app/index.html",
+    "/career-one":                              "/app/index.html",
+    "/make-bid/*":                              "/app/index.html",
+    "/assign-task/*":                           "/app/index.html",
+    "/cancel-task/*":                           "/app/index.html",
+    "/cancel-bid/*":                            "/app/index.html",
+    "/onboarding":                              "/app/index.html",
+    "/image-attachment/*":                      "/app/index.html"
+
+  },
+  "redirects":{
+    "pre":{
+        "/tasks/in/*":                          "/tasks",
+        "/post-task-landing":                   "/landing/post-task-landing",
+        "/tasks/new?task_preset=promo-staff":   "/landing/promotional-staff",
+        "/tasks/new?task_preset=cleaning":      "/landing/home-and-office-cleaning",
+        "/tasks/new?task_preset=handyman":      "/landing/handyman-help",
+        "/tasks/new?task_preset=*":             "/landing/post-task-landing"
+    },
+    "post":{
+
+    }
+  },
+  "mimeTypes":{
+    "html"  : "text/html",
+    "css"   : "text/css",
+    "js"    : "application/javascript",
+    "woff"  : "application/font-woff",
+    "ttf"   : "application/x-font-ttf",
+    "svg"   : "image/svg+xml"
+  }
+}

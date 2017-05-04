@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='../stylesheets/styles.css', type='text/css')
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  body
+    .desktop-nav
+      .nav-wrapper
+        a.nav-logo(href="../")
+        ul
+          li
+            a(href="../") Home
+          li
+            a(href="../blog") Blog
+          li
+            a(href="../about") About Us
+          li
+            a(href="../pricing") Pricing
+
+    .mobile-nav
+      .nav-logo
+      #menu-btn.menu-btn
+        div
+        span
+        span
+        span
+      .responsive-menu
+        ul.animated-fast.fadeIn
+          li
+            a(href="../index.html") Home
+          li
+            a(href="../blog") Blog
+          li
+            a(href="../about") About Us
+          li
+            a(href="../pricing") Pricing
+
+    .blog-post
+      .post.animated.fadeIn
+        .header
+          .avatar.rance
+          h5 Nathan Rance
+        .post-img-hero.post3
+        .blog-post-body
+          h3 5 BENEFITS OF PROPER NUTRITION
+          p Eating a proper, nutritious diet offers numerous health benefits that keep you mentally and physically well. Proper nutrition involves eating a diet balanced in lean proteins, carbs and fats.
+          ol
+            li
+              h6 Heart Health
+              p A diet low in saturated fats, cholesterol and sodium can lower your risk of heart disease. The types of fat in your diet play a major role in your level of risk. Foods that reduce your risk of heart disease include healthy fats such as avocado,nuts and salmon, where as foods high in saturated and trans fats such as cakes, pies and butter can increase the level of risk.
+
+            li
+              h6 Bone and Teeth strength
+              p A diet rich in calcium keeps your bones and teeth strong and helps prevent bone loss associated with osteoporosis. Low-fat dairy products, such as milk, cheese and yogurt; dark green vegetables, such as bok choy and broccoli are good sources of calcium. Vitamin D helps your body absorb calcium so choose products with vitamin D to balance your nutrition.
+
+            li
+              h6 Energy
+              p Increased energy levels are the immediate benefits of switching to a healthy diet. Eliminating excess fats, sugars and refined carbohydrates helps prevent blood sugar fluctuations. Examples of refined carbohydrates include candy and white breads. Unprocessed carbohydrates including whole grains, fruits and vegetables are most nutritious. This allows you to maintain steady blood sugar and constant energy levels as a result. Small, frequent meals also help maintain energy. In addition, eating a healthy breakfast helps keep you energized throughout the day.
+            li
+              h6 Brain Health
+              p Proper nutrition increases blood flow to your brain, protecting brain cells and helping to prevent Alzheimer's disease. For a brain healthy diet, avoid fried foods. Also, eat dark fruits and vegetables such as kale, spinach, broccoli, prunes, raisins, blueberries, raspberries, plums and cherries. Almonds, walnuts, pecans and other nuts are great sources of vitamin E, which along with other vitamins, also helps fight Alzheimer's disease.
+            li
+              h6 Weight Control
+              p To prevent weight gain, you must eat no more calories than you burn each day. For weight loss, you must eat fewer calories than your body burns daily. Healthy and nutrient-dense foods, such as fruits, vegetables, whole grains and lean proteins, typically contain fewer calories than soft drink, sweets and fast food meals. Shedding excess kilograms reduces your risk of obesity-related conditions such as type-2 diabetes, clogged arteries and thyroid dysfunction.
+          .next-button
+            a(class="btn-reg" href="/5-benefits-as-to-why-you-should-squat") Next Article
+
+  .footer
+    .footer-wrapper
+      .copyright
+        p &#169; Active Habits 2017
+      ul.social-links
+       li <a href="https://www.facebook.com/activehabits/" class="facebook"></a>
+       li <a href="https://www.instagram.com/activehabits_" class="instagram"></a>
+       li <a href="tel:0411538188" class="contact-no">0411 538 188</a>
+       li <a href="tel:0400668622" class="contact-no">0400 668 622</a>
+
+
+      script(type='text/javascript').
+        jQuery(function($){
+        $( '.menu-btn' ).click(function(){
+        $('.responsive-menu').toggleClass('expand')
+        })
+        })

@@ -1,0 +1,105 @@
+.footer-container
+  width 100%
+  .footer-wrapper
+    max-width 100%
+    margin 0 auto
+    margin-top 60px
+    overflow hidden
+    .footer-image
+      width 100%
+      height 50px
+      background-image url("../images/bg.jpg")
+      background-size cover
+      background-repeat no-repeat
+      overflow hidden
+      background-position 0px -65px
+    .footer-overlay
+      position absolute
+      margin-top -50px
+      width 100%
+      height 50px
+      background-color rgba(0,0,0,0.3)
+      background-size cover
+      background-repeat no-repeat
+      overflow hidden
+      h6
+        color #fff
+        text-align center
+        font-weight 300
+        margin-top 20px
+
+.footer-wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.social-links {
+  float: right;
+  margin-top: -20px;
+}
+
+.social-links li {
+  color: #fff;
+  float: left;
+  display: inline;
+  margin-left: 20px;
+}
+
+.social-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.instagram {
+  background-image: url('../images/insta.svg');
+  height: 22px;
+  width: 20px;
+  padding: 1px 9px;
+}
+
+
+.facebook {
+  background-image: url('../images/facebook.svg');
+  height: 22px;
+  width: 14px;
+  padding: 1px 5px
+}
+
+@media only screen and (max-width: 1023px)
+  .footer-wrapper {
+    width: 100%;
+  }
+
+
+
+@media only screen and (max-width: 767px)
+  .footer
+    overflow: visible
+    height auto;
+  .footer p
+    margin 0
+
+  .copyright
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top 15px;
+    padding-bottom 15px
+    background-color: #4B555E;
+
+  .social-links
+    float: initial;
+    width: 100%;
+    margin 0
+
+  .social-links li
+    float: initial;
+    width: 100%;
+    height: 45px;
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    padding-top: 15px;
+
+  .social-links li:hover
+    background-color: #32383F;
