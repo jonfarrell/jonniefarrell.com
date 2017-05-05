@@ -1,0 +1,40 @@
+doctype html
+html
+  include ../../../mixins/nav.pug
+  include ../../../mixins/footer.pug
+  head
+    link(rel='stylesheet', href='../../stylesheets/styles.css', type='text/css')
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <title>Jonnie Farrell | Portfolio</title>
+    
+  body
+    +nav
+    .case-study
+      .case-study-logo.as-cs.animated.fadeIn
+      .case-study-wrapper
+        .overview.animated.fadeIn
+          .text 
+            h2 Project overview
+            p Lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet
+            p Lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet lorem ipsum dolor sit amet consectetur adipsicing lorem dolor sit amet
+          .tools 
+            .tools-heading 
+              h6 Tools
+            ul 
+              li Sketch
+              li Illustrator
+              li Ruby on Rails
+              li Swift
+              
+        .wireframes.animated.fadeIn
+          h2 Wireframes
+          .wireframe.one
+          .wireframe.two
+          .wireframe.three
+          .wireframe.four
+              
+              
+              
+    +footer

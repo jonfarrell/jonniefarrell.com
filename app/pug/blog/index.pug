@@ -1,0 +1,25 @@
+doctype html
+html
+  include ../mixins/nav.pug
+  include ../mixins/footer.pug
+  head
+    link(rel='stylesheet', href='../stylesheets/styles.css', type='text/css')
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Jonnie Farrell | Blog</title>
+
+  body
+    +nav
+    .blog.animated.fadeIn
+      .blog-wrapper
+        h2 Blog
+        .blog-post.one
+          .summary-image
+          .title 
+            h4 Salada: Lessons from a startup Designer
+          .two-col
+            .text
+              p Lorem ipsum dolor sit amet consectetur adipiscing Lorem ipsum dolor sit amet consectetur adipiscing Lorem ipsum dolor sit amet consectetur adipiscing Lorem ipsum dolor sit amet cons
+            .button 
+              a(class="portfolio" href="../blog/lessons-from-a-startup-designer") Read more        
+    +footer

@@ -1,0 +1,55 @@
+doctype html
+html
+  include ../mixins/nav.pug
+  include ../mixins/footer.pug
+  head
+    link(rel='stylesheet', href='../stylesheets/styles.css', type='text/css')
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <title>Jonnie Farrell | Contact</title>
+
+  body
+    +nav
+    .contact.animated.fadeIn
+      .contact-wrapper
+        h2 Contact
+        <form name="contactform" method="post" action="../send_form_email.php">
+        <table width="450px">
+      
+        <tr>
+         <td valign="top">
+          <label for="first_name">Your name</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="first_name" maxlength="50" size="30">
+         </td>
+        </tr>
+        
+        <tr>
+         <td valign="top">
+          <label for="email">Email Address</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="email" maxlength="80" size="30">
+         </td>
+        </tr>
+
+        <tr>
+         <td valign="top">
+          <label for="comments">What are you building?</label>
+         </td>
+         <td valign="top">
+          <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+         </td>
+        </tr>
+        
+        <tr>
+         <td colspan="2" style="text-align:center">
+          <input type="submit" value="Submit">
+         </td>
+        </tr>
+        </table>
+        </form>
+         
+    +footer

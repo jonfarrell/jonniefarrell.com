@@ -1,10 +1,58 @@
 doctype html
 html
   include mixins/home-nav.pug
+  include mixins/footer.pug
   head
     link(rel='stylesheet', href='../stylesheets/styles.css', type='text/css')
     <meta name="viewport" content="width=device-width", initial-scale="1"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <title>Jonnie Farrell | Product Designer</title>
+    
+    
   body
     .hero.animated.fadeIn
       +homenav
+      .header-wrapper
+        .intro
+          h1 Hi, I'm Jonnie.
+          h5 I'm a Product Designer based in Sydney, Australia.
+          p I believe design is more than just a part in the process. It runs deeper - design is about understanding people and solving problems. Truly great design helps customers reach their goals as effectively as possible.
+          .buttons
+            a(class="hello" href="../contact") Say hello
+            a(class="portfolio" href="../portfolio") View Portfolio
+        .intro-illus   
+  .why-design
+    h2 Why design?
+    .why-wrapper 
+        .why-illus 
+        .why-text 
+          p I'm so glad you asked. Design is an incredible tool that helps to better understand the people that are using your product. It allows us to make sense of & simplify complex interactions. 
+          </br>
+          p I love design because it helps people.
+
+
+  .design-process
+    h2 The design process.
+    .design-wrapper 
+      .box.research
+        h6 1. Research
+      .box.test-learn
+        h6 2. Prototype & Test
+      .box.visual-design
+        h6 3. Visual Design
+
+  .my-work
+    h2 My work
+    .work-wrapper 
+      ul
+        li.item.adventure-squad
+          .as-item-logo
+        li.item.airtasker
+          .air-item-logo
+        li.item.ahoy
+          .ahoy-item-logo
+      .view-more-button
+        a(class="view-more" href="../portfolio") View more
+            
+    +footer

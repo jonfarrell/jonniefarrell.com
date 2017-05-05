@@ -1,0 +1,40 @@
+doctype html
+html
+  include ../mixins/nav.pug
+  include ../mixins/footer.pug
+  head
+    link(rel='stylesheet', href='../stylesheets/styles.css', type='text/css')
+    <meta name="viewport" content="width=device-width", initial-scale="1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <title>Jonnie Farrell | Portfolio</title>
+    
+  body
+    +nav
+    .portfolio
+      .portfolio-wrapper
+        h2.animated.fadeIn Portfolio
+        ul
+          li.adventure-squad.animated.fadeIn 
+            .as-portfolio-logo
+            .as-portfolio-bg
+            a(href="../portfolio/case-studies/adventure-squad")
+          li.ahoy.animated.fadeIn
+            .ahoy-portfolio-logo
+            .ahoy-portfolio-bg
+            a(href="../ahoy")
+          li.airtasker.animated.fadeIn
+            .airtasker-portfolio-logo
+            .airtasker-portfolio-bg
+            a(href="../airtasker")
+          li.fantasy-betting.animated.fadeIn
+            .fb-portfolio-logo
+            .fb-portfolio-bg
+            a(href="../fantasy-betting")
+          li.active-habits.animated.fadeIn
+            .ah-portfolio-logo
+            .ah-portfolio-bg
+            a(href="../active-habits")
+          li.helloworld.animated.fadeIn
+            a(href="../helloworld")
+    +footer
